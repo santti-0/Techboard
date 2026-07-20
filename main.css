@@ -1,0 +1,121 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+} 
+
+:root {
+    --roxo-destaque: #9747FF;
+    --roxo-hover: #8233E8;
+    --maintext-dark: #ffffff;
+    --maintext-light: #232323;
+    --fundo-dark: #0E1014;
+    --mainfont: 'Unbounded', sans-serif;
+    --font-text: 'Poppins', sans-serif;
+}
+
+body {
+    background-color:var(--fundo-dark);
+    color: var(--maintext-dark);
+    font-family: var(--font-text);
+    font-size: 24px;
+}
+
+header img {
+    display: box;
+    margin: 75px 0 0 360px;
+}
+
+h1{
+    font-family: var(--mainfont);
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 88px;
+    text-align: center;
+    margin: 60 auto
+}
+
+h1 span {
+    color: var(--roxo-destaque);
+}
+
+p {
+    display: block;
+    text-align: center;
+    width: 792px;
+    margin: 24px auto 0;
+
+}
+
+a {
+    display: block;
+    color: var(--maintext-dark);
+    text-decoration: none;
+    text-align: center;
+    background-color:var(--roxo-destaque);
+    width: 340px;
+    height: 66px;
+    text-align: center;
+    line-height: 66px;
+    border-radius: 36px;
+    margin: 40px auto;
+}
+
+a:hover{
+    background-color: var(--roxo-hover);
+}
+
+section img {
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin: 40px auto;
+}
+
+@media(max-width: 768px){
+
+    header img{
+        margin: 65px 0 0 60px;
+    }
+
+    p {
+        width: 648px;
+    }
+}
+
+@media(max-width: 375px){
+    
+    header img {
+        margin: 32px 0 0 16px;
+    }
+
+    p {
+        font-size: 40px;
+        width: 340px;
+    }
+    
+    a{
+        font-size: 20px;
+        width: 251px;
+    }
+
+    section img {
+        width: 340px;
+        height: 230px;
+    }
+}
